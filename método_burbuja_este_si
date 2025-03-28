@@ -1,0 +1,14 @@
+lista = [12, 31, 5, 23, 28, 17, 29]
+ordenado = 1
+while ordenado == 1:
+      ordenado= 2
+      for i in range(len(lista)-1):
+        if lista[i] > lista[i+1]:
+            posición=lista[i+1]
+            lista[i+1]=lista[i] 
+            lista[i]=posición
+            ordenado=1
+                
+print(lista)          
+
+        
